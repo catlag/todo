@@ -1,0 +1,57 @@
+body{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-content: flext-start;
+}
+
+form{
+	font-family: 'Josefin Slab', serif;
+	margin: auto;
+}
+h1{
+	font-size: 65px;
+}
+ul{
+	 list-style-type: none;
+	 margin-left: 15%;
+	 margin-right:15%;
+}
+li{
+flex-grow: 1;
+font-family: 'Josefin Slab', serif;
+font-weight: bold;
+margin-top: auto;
+}
+
+.row {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	-webkit-appearance: none;
+	border-bottom: solid rgba(0, 0, 0, 0.2) 1px ;
+	padding: 5px;
+}
+.buttonDiv {
+	
+}
+.strike {
+	text-decoration: line-through;
+	color: grey;
+	-webkit-appearance: none;
+
+}
+.noStrike {
+	text-decoration: none;
+	-webkit-appearance: none;
+}
+
+.check, .delete, .add {
+	-webkit-appearance: none;
+	font-family: 'Oswald', sans-serif;
+	border-radius: 15px;
+	padding: 5px;
+	border:none;
+}
