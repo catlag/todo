@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="todoApp">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<meta charset="UTF-8">
-	<title>Document</title>
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="http://gregpike.net/demos/angular-local-storage/src/angular-local-storage.js"></script>
+	<script src="common.js"></script>
+	<script src="javascript.js"></script>	
+	<script src="filters.js"></script>
+
+	<script src="sortable.js"></script>
+
+
+
+	<meta charset="UTF-8"
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Todo App</title>
+	
 </head>
 <body>
-	<form id="toDoForm" action="">
-	<h1>
-		<label for"text">To Do </label>
-	</h1>
-	<p>
-		<input type="text" name ="title" id="text"  placeholder="">
-		<input type="submit" value="Add" class="add">
-	</p>
-	</form>
-	<ul id="toDoList"> </ul>
+<div class="todo container-fluid" ng-controller="TodoCtrl">
+		<h1>To Do</h1>
+		<button ng-click="clearTodo()">Clear List</button>
+		<form role="form" ng-submit="addTodo()">
+			<input type="text" ng-model="todo.name" placeholder="add..." required/>
+			<input type="text" ng-hide="true" ng-model="todo.editing" value="false">
+			<button type="submit">Add</button>
+		</form>
+	<!-- <div ui-sortable ng-model="todos"> -->
+		<ul ui-sortable="todoSortable" ng-model="todos" style="padding:10px 10px; cursor: auto;">
+			
+			<li type="text" ng-repeat="todo in todos track by $index" ng-dblclick="editTodo(todo)">
+				<input type="checkbox" ng-model="value1" >
+				<span ng-hide="todo.editing" ng-class="{active:value1}">{{$index+1}}. {{todo.name}}</span>
+				<input ng-show="todo.editing" ng-model="todo.name" ng-blur="doneEditing(todo)" autofocus />  
+				<br>
+				<button ng-click="deleteTodo($index)">Delete</button>
+			</li>
+		</ul>
+<!-- 	</div> -->
 
-	<script src="javascript.js"></script>	
+
+
+<!-- <div ui-sortable ng-model="todos">
+  <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+    <input type="text" ng-model="todo" class="form-control">
+    <input type="checkbox" ng-model="value1">
+    <span class="input-group-btn">
+      <button class="btn btn-danger" ng-click="deleteTodo($index)" aria-label="Remove">X</button>
+    </span>
+  </p>
+</div> -->
+</div>
+
+
 </body>
 </html>

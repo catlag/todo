@@ -1,91 +1,70 @@
-var myForm = document.getElementById("toDoForm");
-var list = document.getElementById("toDoList");
-
-// Adds eventlistener to submit button
-myForm.addEventListener("submit", function (event) {
-	event.preventDefault();	
-	var title = this.title.value;
-
-// creates list, text, and buttons
-	var listItem = document.createElement("li");
-	var buttonDiv = document.createElement("div");
-	var row = document.createElement("div")
-	var text = document.createTextNode(title);
-	var btn1 = document.createElement("button");
-	var btn2 = document.createElement("button");
-
-// sets the text and class of buttons and list items
-	btn1.innerText="Done";
-	btn1.className = "check";
-	btn2.innerText="Delete";
-	btn2.className = "delete";
-	row.className = "row";
-	buttonDiv.className = "buttonDiv";
-	listItem.className = "noStrike";
-
-// Adds list items and buttons to the list
-	listItem.appendChild(text);
-	buttonDiv.appendChild(btn1);
-	buttonDiv.appendChild(btn2);
-	row.appendChild(listItem);
-	row.appendChild(buttonDiv);
-	
-	list.appendChild(row);
-	
-
-	this.title.value ="";
-	 dList();
-	 chkList();
- 
-
-
-});
-
-// adds an event listener to all buttons with the class of delete
-var dList = function(){
-  var rmbutton = document.querySelectorAll(".delete");
-  for (var i = 0; i < rmbutton.length; i++) {
-    rmbutton[i].addEventListener("click", rmList); 
-
-  }
-};
-// deletes the list item 
-var rmList = function() {
-	console.log(this.parentNode.parentNode);
-	this.parentNode.parentNode.remove();
-	
-	
-	
-};
-
-
-// adds an event listener to all buttons with the class of check
-var chkList = function(){
-  var donebutton = document.querySelectorAll(".check");
-  for (var i = 0; i < donebutton.length; i++) {
-    donebutton[i].addEventListener("click", crssList); 
-
-  }
-};
-
-// switched between button classes and button name
-
-
-crssList = function() {
-	
-	if (this.parentNode.parentNode.firstChild.className === "noStrike") {
-		this.parentNode.parentNode.firstChild.className = "strike";
-		this.innerText = "Undo";
-	}else  if (this.parentNode.parentNode.firstChild.className === "strike") {
-		this.parentNode.parentNode.firstChild.className = "noStrike";
-		this.innerText = "Done";
-	}
-	};
+// sort by completed or not
+// edit on doubble click
 	
 
 
 
 
+var app = angular.module('todoApp', ['ui.sortable', 'LocalStorageModule'])
+  .config(['localStorageServiceProvider', function(localStorageServiceProvider){
+    localStorageServiceProvider.setPrefix('ls');
+  }])
+	.controller('TodoCtrl',['$scope','localStorageService','$filter',
+	 function($scope, localStorageService, $filter){
+
+
+		var todosInStore = localStorageService.get('todos');
+
+    $scope.todos = todosInStore || [];
+
+    $scope.$watch('todos', function () {
+      localStorageService.set('todos', $scope.todos);
+    }, true);
+
+
+    $scope.todoSortable = {
+    containment : "parent",//Dont let the user drag outside the parent
+    cursor : "move",//Change the cursor icon on drag
+    tolerance : "pointer"//Read http://api.jqueryui.com/sortable/#option-tolerance
+    };
+
+		$scope.addTodo = function(){
+			$scope.todos.push($scope.todo);
+			$scope.todo.editing = false;
+			console.log($scope.todo.editing);
+			$scope.todo = '';
+
+		};
+
+		$scope.deleteTodo = function(index){
+			$scope.todos.splice(index,1);
+
+		};
+
+		$scope.clearTodo = function(){
+			$scope.todos = [];
+		};
+
+		$scope.edit = function(){
+			console.log("hello!");
+		};
+
+	 $scope.editTodo = function (todo) {
+	 	console.log("Editing");
+
+        todo.editing = true;
+    };
+
+    $scope.doneEditing = function (todo) {
+    	var found = $filter('getByEditable')($scope.todos);
+    	found.name = todo.name;
+      todo.editing = false;
+
+    };
+
+}]);
+
+	
 
 
 
