@@ -29,10 +29,23 @@ var app = angular.module('todoApp', ['ui.sortable', 'LocalStorageModule'])
     };
 
 		$scope.addTodo = function(){
-			$scope.todos.push($scope.todo);
 			$scope.todo.editing = false;
-			console.log($scope.todo.editing);
+			$scope.todo.isDone = false;
+			$scope.todos.push($scope.todo);
+			console.log($scope.todo);
 			$scope.todo = '';
+
+		};
+
+		$scope.doneTodo = function(todo){
+			
+			if(todo.isDone === false){
+				todo.isDone = true;
+				console.log(todo);
+			} else {
+				todo.isDone = false;
+				console.log(todo);
+			}
 
 		};
 
@@ -51,7 +64,6 @@ var app = angular.module('todoApp', ['ui.sortable', 'LocalStorageModule'])
 
 	 $scope.editTodo = function (todo) {
 	 	console.log("Editing");
-
         todo.editing = true;
     };
 
@@ -61,10 +73,9 @@ var app = angular.module('todoApp', ['ui.sortable', 'LocalStorageModule'])
       todo.editing = false;
 
     };
-
 }]);
 
-	
+$('#clear').confirmation(options);
 
 
 
