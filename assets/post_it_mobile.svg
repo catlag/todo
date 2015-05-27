@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="313px" height="146px" viewBox="0 0 313 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="308px" height="118px" viewBox="0 0 308 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
@@ -26,7 +26,21 @@
         <path id="path-8" d="M241.576208,9.0711796 C213.10261,20.37696 175.001371,30.1698282 147.956195,45.1632498 C134.461527,52.6444825 97.2184692,59.4291322 84.4415005,67.0855179 C75.507712,72.4389419 64.9934104,73.0986772 56.8031826,78.6008494 C56.3538617,78.9027019 48.5237517,83.0865911 47.6068688,83.1334472 C34.3760978,83.8095875 21.8530753,94.1021171 21.8530753,96.0614658 C21.8530753,99.8338834 18.8753862,100.87487 21.8530753,101.64373 C24.0856466,102.220196 29.7502719,103.955332 34.0166988,103.678668 C45.508455,102.933466 47.2944923,106.002898 56.8031826,103.678665 C62.4986848,102.2865 67.8567558,100.710046 73.2763113,99.1721654 C80.8530378,97.0221549 88.5723946,94.9328157 95.7877356,92.6162098 C103.901441,90.0111691 111.616455,87.2345736 119.216734,84.4222248 C181.292117,61.4523278 219.703566,50.2868932 273.873223,23.5802548 C280.671415,20.2286208 273.87322,18.8178135 273.87322,14.6534442 C273.87322,10.4667459 284.249925,10.7151655 268.097702,7.86008494 C261.366869,6.67033723 262.789051,8.00338416 258.29628,7.86008493 C257.347911,7.82983622 255.834106,6.71126373 254.260401,6.62734116 L241.576208,9.0711796 Z"></path>
     </defs>
     <g id="PostIt-Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="iPhone-6" sketch:type="MSArtboardGroup" transform="translate(-32.000000, -75.000000)">
+        <g id="iPhone-6" sketch:type="MSArtboardGroup" transform="translate(-35.000000, -92.000000)">
+            <text id="1.-Take-out-trash" sketch:type="MSTextLayer" font-family="Coming Soon" font-size="14" font-weight="normal" text-decoration="line-through" fill="#9B9B9B">
+                <tspan x="89" y="120">1. Take out trash</tspan>
+            </text>
+            <g id="Path-16-+-Path-17-+-Path-18" sketch:type="MSLayerGroup" transform="translate(295.000000, 170.000000)" stroke="#D0011B" stroke-width="2" stroke-linecap="round">
+                <path d="M1.38902047,0.672031381 C-2.20566566,12.476753 10.3265983,17.9381652 24.157851,19.6015742" id="Path-16" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M24.0199385,18.8594477 C18.7390353,18.2403827 15.741662,15.3934096 15.0039108,11.8398037" id="Path-17" sketch:type="MSShapeGroup"></path>
+                <path d="M23.4741314,20.1425254 C17.24663,19.6214749 14.3952506,21.8777765 12.5613394,25.1064867" id="Path-18" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Path-16-+-Path-17-+-Path-18-Copy" sketch:type="MSLayerGroup" transform="translate(295.000000, 170.000000)" stroke="#D0011B" stroke-width="2" stroke-linecap="round">
+                <path d="M1.38902047,0.672031381 C-2.20566566,12.476753 10.3265983,17.9381652 24.157851,19.6015742" id="Path-16" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M24.0199385,18.8594477 C18.7390353,18.2403827 15.741662,15.3934096 15.0039108,11.8398037" id="Path-17" sketch:type="MSShapeGroup"></path>
+                <path d="M23.4741314,20.1425254 C17.24663,19.6214749 14.3952506,21.8777765 12.5613394,25.1064867" id="Path-18" sketch:type="MSShapeGroup"></path>
+            </g>
+            <rect id="Rectangle-23" stroke="#000000" fill="#D8D8D8" sketch:type="MSShapeGroup" x="51" y="104" width="20" height="20"></rect>
             <g id="Group" sketch:type="MSLayerGroup" transform="translate(35.000000, 92.000000)">
                 <g id="Rectangle-3" filter="url(#filter-2)" opacity="0.476912313">
                     <use fill="url(#linearGradient-1)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>

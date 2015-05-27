@@ -4,6 +4,8 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
+	<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
 	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
 	<script src="jquery.min.js"></script>
 
@@ -46,18 +48,18 @@
 
 
 <body>
-<div class="todo container-fluid" ng-controller="TodoCtrl">
+<div class="container-fluid" ng-controller="TodoCtrl">
 
 <!-- MODAL -->
 	<div class="modal fade bs-example-modal-lg"  id="addModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      <form role="form" class="form-group" ng-submit="addTodo()">
-					<input id="add" class="form-control" type="text" ng-model="todo.name" placeholder="add a todo" autofocus required maxlength="250" />
+					<input id="add" class="form-control" type="text" ng-model="todo.name" placeholder="add a todo" autofocus required maxlength="140" />
 					<input type="text" ng-hide="true" ng-model="todo.editing" value="false">
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button id="addTodo" class="btn btn-default" type="submit">Add</button>
+				<button type="button" class="modal-button" data-dismiss="modal">Close</button>
+				<button id="addTodo" class="modal-button" type="submit">Add</button>
 			</div>
 					
 				</form>
@@ -82,21 +84,16 @@
 
 <!-- LIST -->
 	<div class="row-fluid list">
-		<ul ui-sortable="todoSortable" ng-model="todos"  >
+		<ul ui-sortable="todoSortable" ng-model="todos" class="ul-list" >
 			<div class="todo" ng-repeat="todo in todos track by $index">
-				<div class="post-it" >
-					
-				</div>
 				<div type="text" class="text .col-md-1" ng-dblclick="editTodo(todo)" >
 						
-						<input type="checkbox" ng-click="doneTodo(todo)" ng-checked="todo.isDone"/>
-
-						<p class="todo-name" ng-hide="todo.editing" ng-class="{active:todo.isDone}">{{$index+1}}. {{todo.name}}</p>
+						<p class="todo-name" ng-hide="todo.editing" ng-class="{active:todo.isDone}"><input type="checkbox" ng-click="doneTodo(todo)" ng-checked="todo.isDone"/>&nbsp {{$index+1}}. {{todo.name}}</p>
 
 						<input ng-show="todo.editing" ng-model="todo.name" ng-blur="doneEditing(todo)" autofocus />  
 							
 				</div>
-				<img class="delete" src="https://i.imgur.com/pYq3Ih5.png" alt="" ng-click="deleteTodo($index)">
+				<img class="delete" src="assets/arrow_mobile.svg" alt="" ng-click="deleteTodo($index)">
 					<!-- <button ng-click="deleteTodo($index)">Delete</button> -->
 			</div>
 		</ul>

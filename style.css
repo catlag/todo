@@ -3,18 +3,17 @@ body {
   display: -webkit-flex;*/
   /*flex-direction: column;*/
   /*align-content: flext-start;*/
-  background-color: #F5F3F3; }
-
-form {
-  font-family: 'Josefin Slab', serif; }
+  background-color: #F5F3F3;
+  font-family: 'Coming Soon', cursive; }
 
 .heading {
   top: 0px;
   left: 0px;
   position: fixed;
-  background-color: #fff;
+  z-index: 20;
+  background-color: white;
   width: 100%;
-  height: 6em;
+  height: 4em;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -46,5 +45,101 @@ form {
     width: 2.5em;
     font-weight: bold;
     padding: 0%; }
+
+.modal .modal-footer {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+.modal .modal-button {
+  -webkit-appearance: none;
+  font-size: 1.5em;
+  padding: .2em; }
+.modal #add {
+  margin: 8% 5%;
+  width: 90%;
+  height: 3em;
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold;
+  font-size: 1.5em; }
+.modal ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: red; }
+.modal ::-webkit-input-placeholder {
+  color: red; }
+
+.list {
+  padding-top: 30%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start; }
+
+ul {
+  list-style-type: none; }
+
+.strike {
+  text-decoration: line-through;
+  color: grey;
+  -webkit-appearance: none; }
+
+.noStrike {
+  text-decoration: none;
+  -webkit-appearance: none; }
+
+.check, .delete, .add {
+  -webkit-appearance: none;
+  font-family: 'Oswald', sans-serif;
+  border: none; }
+
+.clear {
+  -webkit-appearance: none;
+  font-family: 'Oswald', sans-serif;
+  border: none; }
+
+.active {
+  text-decoration: line-through;
+  color: grey; }
+
+#add {
+  border: solid 1px black; }
+
+/*#todo{
+	display: inline-block;
+	white-space:pre-line;
+	word-wrap: break-word
+}*/
+.ul-list {
+  padding: 0; }
+
+.todo {
+  width: 100%;
+  height: 30%;
+  margin: -20% 2% 0 2%;
+  padding: 0;
+  background-image: url("assets/post_it_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: border-box; }
+  .todo p {
+    padding: 3em 1em 0 .5em;
+    margin: 3% 0;
+    position: relative;
+    font-size: 1em;
+    width: 21em;
+    height: 7em; }
+
+.delete {
+  position: relative;
+  margin-bottom: 15%;
+  left: 85%;
+  z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */
