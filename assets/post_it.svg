@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="266px" height="245px" viewBox="0 0 266 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="102.136122%" y1="101.858557%" x2="13.1081669%" y2="13.6624465%" id="linearGradient-1">
+            <stop stop-color="#514E44" offset="0%"></stop>
+            <stop stop-color="#FBDA61" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2.47300092" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <path id="path-3" d="M263.231487,244.944627 L2.56517572,236.555587 L19.6514296,18.1180797 L251.310773,16.8965517 L263.231487,244.944627 Z"></path>
+        <linearGradient x1="100.940758%" y1="-3.03323783%" x2="14.3118322%" y2="87.5203921%" id="linearGradient-4">
+            <stop stop-color="#514E44" offset="0%"></stop>
+            <stop stop-color="#FBDA61" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="2.47300092" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <path id="path-6" d="M222.430615,221.783396 L51.3418924,210.963341 L15.9974004,17.6269742 L259.930541,4.08482413 L222.430615,221.783396 Z"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="8.82065717" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <path id="path-8" d="M209.499997,19.4999999 C184.80709,43.8036435 151.76489,64.8550324 128.310742,97.0858702 C116.60788,113.168017 84.3099125,127.752742 73.229455,144.211409 C65.4818847,155.719479 56.36366,157.137689 49.2609213,168.965517 C48.8712607,169.614399 42.0808237,178.608361 41.2856834,178.709085 C29.811679,180.162561 18.9514491,202.288054 18.9514491,206.499998 C18.9514491,214.609433 16.3691341,216.847206 18.9514491,218.499998 C20.8875821,219.739206 25.800065,223.469168 29.5000006,222.874434 C39.4658946,221.272498 41.0147839,227.87075 49.2609213,222.874428 C54.2001812,219.881737 58.8468137,216.49289 63.5467669,213.186961 C70.1174643,208.565158 76.8118537,204.073778 83.0691501,199.093851 C90.1055269,193.493885 96.7961501,187.525135 103.387273,181.479526 C157.220357,132.101936 190.531579,108.099989 237.508651,50.6896552 C243.404187,43.4847639 237.508649,40.4520003 237.508649,31.5000003 C237.508649,22.5000003 246.507546,23.0340192 232.499997,16.8965517 C226.662876,14.3389924 227.896223,17.2045971 223.999997,16.8965517 C223.177551,16.8315271 221.864747,14.4269707 220.499997,14.2465652 L209.499997,19.4999999 Z"></path>
+    </defs>
+    <g id="PostIt-Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-691.000000, -165.000000)">
+            <text id="3.-Get-mail" sketch:type="MSTextLayer" font-family="Coming Soon" font-size="24" font-weight="normal" fill="#0E0E0E">
+                <tspan x="727" y="208">3. Get mail</tspan>
+            </text>
+            <g id="Path-16-+-Path-17-+-Path-20" sketch:type="MSLayerGroup" transform="translate(907.500000, 368.500000) rotate(9.000000) translate(-907.500000, -368.500000) translate(887.000000, 347.000000)" stroke="#D0011B" stroke-width="2">
+                <path d="M0.975378779,0.754368993 C-0.696935371,24.5545043 19.4933591,32.2451825 40.4320689,32.2451825" id="Path-16" sketch:type="MSShapeGroup"></path>
+                <path d="M40.4035784,31.9767829 C32.0906057,32.5543391 26.0795754,26.5561342 23.1223085,17.8481213" id="Path-17" sketch:type="MSShapeGroup" transform="translate(31.762943, 24.931642) rotate(-1.000000) translate(-31.762943, -24.931642) "></path>
+                <path d="M40.0802746,31.7191566 C29.6937104,31.1584198 24.479543,35.6831585 20.7993093,42" id="Path-18" sketch:type="MSShapeGroup" transform="translate(30.439792, 36.836109) rotate(3.000000) translate(-30.439792, -36.836109) "></path>
+            </g>
+            <rect id="Rectangle-15" stroke="#514E44" stroke-width="2" sketch:type="MSShapeGroup" x="696" y="190" width="22" height="21"></rect>
+            <g id="Group-3" sketch:type="MSLayerGroup" transform="translate(689.000000, 162.000000)">
+                <g id="Rectangle-3" filter="url(#filter-2)" opacity="0.476912313">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                    <use fill="none" xlink:href="#path-3"></use>
+                </g>
+                <g id="Rectangle-4" filter="url(#filter-5)" opacity="0.476912313">
+                    <use fill="url(#linearGradient-4)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-6"></use>
+                    <use fill="none" xlink:href="#path-6"></use>
+                </g>
+                <rect id="Rectangle-2" fill="#FFF67E" sketch:type="MSShapeGroup" x="0" y="0" width="255.778547" height="236.551724"></rect>
+                <g id="Path-3" filter="url(#filter-7)">
+                    <use fill-opacity="0.950000048" fill="#FCF495" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-8"></use>
+                    <use fill="none" xlink:href="#path-8"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
